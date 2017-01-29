@@ -1,0 +1,12 @@
+bin
+lib
+include
+ova/Vagrantfile
+packer_cache/
+output-virtualbox-ovf/
+ova/.vagrant
+ova/ubuntu-16-04.ova
+pip-selfcheck.json
+terraform.tfstate
+terraform.tfstate.backup
+.cache
