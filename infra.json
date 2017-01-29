@@ -1,0 +1,21 @@
+{
+  "variables": {
+    "do_token": ""
+  },
+  "builders": [{
+    "type": "digitalocean",
+    "api_token": "{{user `do_token`}}",
+    "image": "ubuntu-16-04-x64",
+    "region": "nyc2",
+    "size": "512mb",
+    "ssh_username":"root"
+  },
+  {
+    "type": "virtualbox-ovf",
+    "source_path": "ova/ubuntu-16-04.ova",
+    "ssh_username": "vagrant",
+    "ssh_password": "vagrant",
+    "shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
+  }
+  ]
+}
