@@ -9,3 +9,5 @@ pip-selfcheck.json
 terraform.tfstate
 terraform.tfstate.backup
 .cache
+var/.vagrant/
+var/packer.box
